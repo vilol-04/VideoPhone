@@ -1,0 +1,138 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.Section_top{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/img1.jpg);
+  /* {
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+  }; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 10s infinite ease-in-out;
+  
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+
+}
+.content h1{
+  /* color: #fff; */
+  font-size: 60px;
+  letter-spacing: 15px;
+}
+.content h1 span{
+  color: #111;
+}
+.content a{
+  background: #85c1ee;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.content a:hover{
+  background: #034e88;
+  color: #fff;
+}
+@keyframes change{
+  0%
+  {
+      background-image: url(images/img1.jpg);
+  }
+  25%
+  {
+      background-image: url(images/img2.jpg);
+  }
+  /* 40%
+  {
+      background-image: url(images/image.jpg);
+  } */
+  50%
+  {
+      background-image: url(images/img3.jpeg);
+  }
+  75%
+  {
+      background-image: url(images/img4.jpg);
+  }
+  100%
+  {
+      background-image: url(images/img5.jpg);
+  }
+}
+
+
+
+body{
+  background:#0F2027;
+  background:-webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027) ;
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+#join-btn{
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-top:-50px;
+  margin-left:-100px;
+  font-size:18px;
+  padding:20px 40px;
+}
+
+#video-streams{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  height: 90vh;
+  width: 1400px;
+  margin:0 auto;
+}
+
+.video-container{
+  max-height: 100%;
+  border: 2px solid black;
+  background-color: #203A49;
+}
+
+.video-player{
+  height: 100%;
+  width: 100%;
+}
+
+button{
+  border:none;
+  background-color: cadetblue;
+  color:#fff;
+  padding:10px 20px;
+  font-size:16px;
+  margin:2px;
+  cursor: pointer;
+}
+
+#stream-controls{
+  display: none;
+  justify-content: center;
+  margin-top:0.5em;
+}
+
+@media screen and (max-width:1400px){
+  #video-streams{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      width: 95%;
+  }
+}

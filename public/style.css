@@ -1,0 +1,102 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.nav-item{
+  padding: 20px;
+}
+
+ .entry-modal{
+  border: 1px solid #444444;
+  width: 300px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 40%;
+  
+}  
+
+#notification{
+  position: absolute; 
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  top: 47.33px;
+  font-size: 18pt;
+  width: 100%;
+  background-color: orange;
+}
+
+.title{
+  color: white;
+}
+.room-input{
+border: none;
+padding:5px;
+}
+
+button{
+  margin: 3px;
+  padding: 5px;
+} 
+
+
+#chat-form{
+  margin-top: 160%;
+}
+
+
+.offcanvas-title{
+  margin-left: 28%;
+}
+
+
+.chat-messages {
+	padding: 30px;
+	max-height: 500px;
+}
+
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+	overflow-wrap: break-word;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: #777;
+}
+
+
+  #remote-video{
+  margin-left: 20px;
+  margin-top: 20px;
+  
+}
+
+#local-video{
+  margin-top: 20px;
+} 
+
+
+
+
+
+
+
+
+
